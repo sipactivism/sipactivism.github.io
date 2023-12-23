@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Memory Game</title>
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+      <video autoplay></video>
+      <script>
+        const constraints = {
+            "video": true,
+            "audio": false
+        }
+        navigator.mediaDevices.getUserMedia(constraints)
+        .then(stream => {
+            console.log("Got media stream", stream);
+            document.querySelector("video").srcObject = stream;
+        })
+        .catch(error => {
+           console.error("Error accessing media devices", error);
+        })
+      </script>
+  </body>
+</html>
