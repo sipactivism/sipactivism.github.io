@@ -1,0 +1,14 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.logo {
+  display: inline;
+}
+
+.nav-list {
+  padding-inline-start: 0;
+  display: inline;
+}
